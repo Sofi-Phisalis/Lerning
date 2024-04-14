@@ -1,1 +1,6 @@
 print("Привет")
+my = input()
+print("Hello,",my)
+location = input()
+time = input()
+print("Current location is",location,"and time is",time)
