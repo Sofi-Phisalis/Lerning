@@ -15,6 +15,6 @@ print((max(int(input()),int(input()),int(input()))))
 a, b, d = int(input()), int(input()), int(input())
 
 if a > b:
-    print (a) if a > d else print (d)
+    print (a) if a >= d else print (d)
 else:
-    print (b) if b > d else print(d)
+    print (b) if b >= d else print(d)
