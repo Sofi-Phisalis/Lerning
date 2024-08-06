@@ -31,20 +31,20 @@
 #   1111_1111_1111_1111
 
 
-a = input()
+#a = input()
 
-print(a.replace(_old:"!@#%", _new:"len()").lower(a))
+#print(a.replace(_old:"!@#%", _new:"len()").lower(a))
 #здесь я тоже сдаюсь. я нихренашеньки не поняла.
 
 # TODO Двоеточие используется для аннотации типов, если же ты хочешь передать значение в определенный аргумент, то используют равно:
-print(a.replace(_old="!@#%", _new="len()").lower(a))
+#print(a.replace(_old="!@#%", _new="len()").lower(a))
 # TODO но если ты зажмешь клавишу ctrl и нажмешь на метод replace, то увидишь что она не принимает именнованных аргументов:
 #  def replace(self, *args, **kwargs): # real signature unknown
 #  в реплайсе передают параметыр позиционно:
-print(a.replace("!@#%", "len()").lower(a))
+#print(a.replace("!@#%", "len()").lower(a))
 
 # TODO если ты хочешь вызвать функцию лен, то не ставь кавычки , в твоем случае то просто строка
-print(a.replace("!@#%", len()).lower(a))
+#print(a.replace("!@#%", len()).lower(a))
 
 # TODO не пытайся все задачи решать в 1 строчку, пробуй как получается, потом уже оптимизируй
 #  Первое что тебе нужно пройтись циклом по строке и заменить символы на пробелы
@@ -71,4 +71,19 @@ print(a.replace("!@#%", len()).lower(a))
 #4
 #hello world
 
+#1 задача
 
+
+#последний не работает. вывод не тот
+a = input()
+a_l = a.lower()
+
+sumbols_rep = "!@#%"
+
+count = 0
+
+for sumbol in sumbols_rep:
+    a_l = a_l.replace(sumbol, " ")
+    count += 1
+
+print(f"{count}\n{a_l}")
